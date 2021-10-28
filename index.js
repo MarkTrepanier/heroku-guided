@@ -6,7 +6,7 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res)=>{
-res.send('hi')
+res.send('<h1>hi</h1>')
 })
 app.get('/port', (req,res)=>{
     res.send(`<div>port is ${process.env.PORT}</div>`)
