@@ -8,12 +8,15 @@ const PORT = process.env.PORT || 5000
 app.get('/', (req, res)=>{
 res.send('<h1>hi</h1>')
 })
+
 app.get('/port', (req,res)=>{
     res.send(`<div>port is ${process.env.PORT}</div>`)
 })
+
 app.listen(PORT, ()=>{
     console.log(`<div>listening on ${PORT}</div>`)
 })
+
 function cohortRox() {//eslint-disable-line
     console.log(process.argv[2]);
     console.log(process.argv.slice(2))
